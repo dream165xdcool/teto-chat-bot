@@ -99,10 +99,6 @@ function addToMemory(userId, role, content) {
   }
 }
 
-app.get("/", (req, res) => {
-  res.send("Server is running!");
-});
-
 app.post("/webhook", async (req, res) => {
   try {
     await line.middleware(config)(req, res, async () => {
