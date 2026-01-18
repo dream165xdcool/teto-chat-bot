@@ -247,5 +247,3 @@ app.post("/webhook", async (req, res) => {
     res.status(200).send("OK");
   }
 });
-
-app.listen(PORT, () => console.log(`Bot running on port ${PORT}`));
